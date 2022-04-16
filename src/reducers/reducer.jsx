@@ -17,9 +17,11 @@ const initialState = {
 export default function(state = initialState, action) {
     switch(action.type){
         //describen lo que pasa en la app y cambian el state(los payload)
-       
-       
-       
+       case "BUSCAR_PERSONAJES":
+            return {
+                ...state,
+                busqueda: action.name
+            }
         default:
             //devuelve el state como se encuentra
             return state;
