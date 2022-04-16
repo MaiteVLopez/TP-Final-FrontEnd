@@ -5,6 +5,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { createStore, applyMiddleware } from 'redux';
 import {TypedUseSelectorHook, useSelector as useReduxSelector} from "react-redux";
 
+import thunk from 'redux-thunk';
+import reducer from '../reducers/reducer';
 
 
 const rootReducer = combineReducers({
